@@ -43,6 +43,7 @@ void main(void)
 		if (SMstatbits.CalcNext == 1)
 		{
 			SMstatbits.CalcNext = 0;
+			sm__lpf( &SMcontrol[0], &SMpos[0]);
 //			sm__lpf( &SMcontrol[0], &SMpos[0]);
 //			sm__lpf(SPEEDOMETR);
 //			sm__lpf(TAHOMETR);
